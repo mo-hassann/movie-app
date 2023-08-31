@@ -1,0 +1,21 @@
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+
+  svg {
+    font-size: 3rem;
+    color: var(--first-color);
+    animation: loading 0.8s infinite cubic-bezier(0.5, 0.5, 1, 1);
+    @keyframes loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

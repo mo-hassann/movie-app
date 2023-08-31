@@ -1,0 +1,159 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*-------- Colors --------*/
+  --first-color: hsl(358, 75%, 48%);
+  --first-color-alt: hsl(358, 65%, 48%);
+  --title-color: hsl(234, 83%, 98%);
+  --text-color: hsl(232, 10%, 75%);
+  --body-color: hsl(208, 10%, 26%);
+  --container-color-lighten: hsl(233, 9%, 25%);
+  --container-color: hsl(233, 9%, 15%);
+  --container-color-darken: hsl(233, 9%, 10%);
+
+  /*-------- Font --------*/
+  --body-font: Arial, Helvetica, sans-serif;
+  --fs-1: 7rem;
+  --fs-2: 4.5rem;
+  --fs-3: 3.6rem;
+  --fs-4: 2.4rem;
+  --fs-5: 2.2rem;
+  --fs-6: 2rem;
+  --fs-7: 1.6rem;
+  --fs-8: 1.5rem;
+  --fs-9: 1.4rem;
+  --fs-10: 1.2rem;
+  --fs-11: 1.1rem;
+  --fs-12: 1rem;
+
+  /*-------- Transitions --------*/
+  --main-transition: 0.5s ease;
+  --second-transition: 0.2s ease;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+    border-radius: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--third-color);
+  }
+}
+
+::selection {
+  background: var(--first-color);
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--fw-700);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--body-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.logo {
+  font-weight: 600;
+  text-transform: capitalize;
+  span {
+    color: var(--first-color);
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.btn {
+  background: var(--first-color);
+  padding: 0.7rem 1.2rem;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: var(--fs-12);
+  transition: all var(--main-transition);
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* For smaller devices */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* For smaller devices */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 65%;
+  }
+}
