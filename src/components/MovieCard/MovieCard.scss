@@ -1,8 +1,6 @@
 .movie-card {
   position: relative;
   display: block;
-  width: 190px;
-  height: 270px;
   background: rgb(0, 0, 0) center center/cover no-repeat;
   background-size: 7rem;
   border-radius: 20px;
@@ -12,6 +10,11 @@
   &--medium {
     width: 400px;
     height: 200px;
+  }
+
+  &--small {
+    width: 190px;
+    height: 270px;
   }
 
   &__img {

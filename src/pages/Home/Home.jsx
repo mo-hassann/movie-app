@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.scss";
 import { Await, defer, useLoaderData } from "react-router-dom";
 
-import ReviewSection from "../../components/ReviewSection/ReviewSection";
+// import ReviewSection from "../../components/ReviewSection/ReviewSection";
 import MoviesSection from "../../components/MoviesSection/MoviesSection";
 import Loading from "../../components/Loading/Loading";
 
@@ -25,13 +25,10 @@ export async function loader() {
   return defer({ homePageSectionsPromise });
 }
 
-const homePageElms = ({ reviewSections, mainSections }) => {
+const homePageElms = (homePageSections) => {
   return (
     <>
-      {reviewSections.map((section) => (
-        <ReviewSection key={section.sectionName} section={section} />
-      ))}
-      {mainSections.map((section) => (
+      {homePageSections.map((section) => (
         <MoviesSection key={section.sectionName} section={section} />
       ))}
     </>
