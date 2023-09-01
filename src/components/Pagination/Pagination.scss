@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1.5rem 0;
+  .btn {
+    border: 3px solid var(--first-color);
+  }
+  .item {
+    background-color: transparent;
+    opacity: 0.8;
+    &--active,
+    &:hover {
+      background-color: var(--first-color);
+      opacity: 1;
+    }
+  }
+}

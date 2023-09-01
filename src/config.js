@@ -3,10 +3,10 @@ export const API_URL = "https://api.themoviedb.org/3";
 export const API_IMGS_URL = "https://image.tmdb.org/t/p/w500";
 
 // MOVIE LISTS
-export const NOW_PLAYING_MOVIES_URL = `${API_URL}/movie/now_playing?&api_key=${API_KEY}`;
-export const POPULAR_MOVIES_URL = `${API_URL}/movie/popular?&api_key=${API_KEY}`;
-export const TOP_RATED_MOVIES_URL = `${API_URL}/movie/top_rated?&api_key=${API_KEY}`;
-export const UPCOMING_MOVIES_URL = `${API_URL}/movie/upcoming?&api_key=${API_KEY}`;
+// export const NOW_PLAYING_MOVIES_URL = `${API_URL}/movie/now_playing?&api_key=${API_KEY}`;
+// export const POPULAR_MOVIES_URL = `${API_URL}/movie/popular?&api_key=${API_KEY}`;
+// export const TOP_RATED_MOVIES_URL = `${API_URL}/movie/top_rated?&api_key=${API_KEY}`;
+// export const UPCOMING_MOVIES_URL = `${API_URL}/movie/upcoming?&api_key=${API_KEY}`;
 
 // export const POPULAR_MOVIES_URL = (pageNum) =>
 //   `${API_URL}/movie/popular?&page=${pageNum}&api_key=${API_KEY}`;

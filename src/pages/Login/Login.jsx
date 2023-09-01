@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.scss";
 
 import { Form, Link, redirect, useNavigation } from "react-router-dom";
-import { handleLogin } from "../../utils";
+import { handleLogin } from "../../api";
 
 export async function action({ request }) {
   const formData = await request.formData();

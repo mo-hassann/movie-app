@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Register.scss";
 
 import { Form, Link, redirect, useNavigation, useSearchParams } from "react-router-dom";
-import { handleRegister } from "../../utils";
+import { handleRegister } from "../../api";
 
 export async function action({ request }) {
   const formData = await request.formData();
@@ -22,7 +22,7 @@ export async function action({ request }) {
 
 export default function Register() {
   const formState = useNavigation().state;
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const formMessage = searchParams.get("message");
   const [isMessage, setIsMessage] = useState(formMessage ? true : false);
 
