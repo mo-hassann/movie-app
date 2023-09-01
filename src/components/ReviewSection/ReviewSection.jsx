@@ -6,7 +6,11 @@ import "swiper/css";
 
 import MovieCard from "../MovieCard/MovieCard";
 
-export default function ReviewSection({ movies }) {
+export default function ReviewSection({ section }) {
+  const { sectionContent } = section;
+  const { results } =
+    sectionContent; /* 'dates', 'page', 'results', 'total_pages', 'total_results' */
+
   return (
     <div className="review">
       <Swiper
@@ -19,7 +23,7 @@ export default function ReviewSection({ movies }) {
         }}
         modules={[Autoplay]}
       >
-        {movies.map((movie) => (
+        {results.map((movie) => (
           <SwiperSlide key={movie.id}>
             <MovieCard cardSize="medium" curMovie={movie} />
           </SwiperSlide>

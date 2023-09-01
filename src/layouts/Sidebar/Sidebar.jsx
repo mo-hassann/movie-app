@@ -12,7 +12,7 @@ export default function Sidebar() {
           mov <span>•</span> night
         </h1>
         <div className="sidebar__logo-icon">
-          <span>logo</span>
+          <span style={{ fontSize: "50px" }}>•</span>
         </div>
         <div className="sidebar__sections">
           <div className="sidebar__section sidebar__section--menu">

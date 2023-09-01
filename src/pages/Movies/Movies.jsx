@@ -4,10 +4,9 @@ import "./Movies.scss";
 import GridMovies from "../../components/GridMovies/GridMovies";
 
 export default function Movies({ movies }) {
-  const moviesPerPage = 10;
-  if (movies.length > moviesPerPage) {
-    return <GridMovies movies={movies.slice(0, moviesPerPage)} />;
-  }
-
   return <GridMovies movies={movies} />;
 }
+
+// todo :
+// solve home error problem
+// making statick page that take the list name and return the list of movies
